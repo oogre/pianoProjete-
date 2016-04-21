@@ -1,0 +1,1 @@
+killall	serial2midi
