@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "216B4F6312CD6D632E45E9450696DFCAE128C585",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "90E2F969A762FB62C413A0C44D1F334E6EC3F531" : 0,
+    "216B4F6312CD6D632E45E9450696DFCAE128C585" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "632B0093-49B4-4993-8B96-10B9F96CE1E0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "90E2F969A762FB62C413A0C44D1F334E6EC3F531" : "..\/..\/Documents\/openFrameworks\/addons\/ofxMidi",
+    "216B4F6312CD6D632E45E9450696DFCAE128C585" : "pianoProjete%CC%81\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "serial2midi",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "openframeworks\/proxy\/serial2midi\/serial2midi.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oogre\/pianoProjete-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "216B4F6312CD6D632E45E9450696DFCAE128C585"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/danomatika\/ofxMidi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "90E2F969A762FB62C413A0C44D1F334E6EC3F531"
+    }
+  ]
+}
