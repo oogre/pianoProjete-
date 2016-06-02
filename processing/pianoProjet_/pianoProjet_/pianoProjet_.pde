@@ -26,6 +26,7 @@ void setup() {
 ArrayList <Animation> animations = new ArrayList<Animation>();
 
 void draw() {
+  println(Anim.GEN_INIT_COUNTER + " : " + Anim.LOCAL_INIT_COUNTER[0] + " : " + Anim.LOCAL_INIT_COUNTER[1] + " : " + Anim.LOCAL_INIT_COUNTER[2]);
   background(0);
   try {
     for (int i = animations.size() - 1; i >= 0; i--)
@@ -63,6 +64,7 @@ void keyPressed(){
 }
 
 void keyReleased(){
+
   /*
     noteOff(new Note(int Channel, int pitch, int velocity));
     Ceci va déclancher le decay de l'anim liée au keyCode

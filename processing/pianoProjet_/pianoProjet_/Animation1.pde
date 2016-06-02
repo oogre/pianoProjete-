@@ -1,10 +1,13 @@
-class Animation2 extends Anim implements Animation {
+class Animation1 extends Anim implements Animation {
   float alpha = 0 ;
   float alphaInc = 0 ;
   int opacity = 0;
 
-  public Animation2() {
+  public Animation1() {
+    super(1);
     this.alphaInc = random(1);
+    
+    
   }
 
   void attack(){
@@ -13,11 +16,10 @@ class Animation2 extends Anim implements Animation {
     rotate(alpha+=alphaInc);
     translate(-width / 2, -height / 2);
     opacity = constrain(opacity, 0, 255);
-    fill(255, 255);
-    opacity += getVelocity();
+    fill(255, 0, 0, opacity += getVelocity());
     noStroke();
-    rectMode(CENTER);
-    rect(width / 2, height / 2, 100+opacity, 100+opacity);
+    ellipseMode(CENTER);
+    ellipse(width / 2, height / 2, 30, opacity);
     if (opacity >= 255) {
       this.setStatus(Animation.SUSTAIN);
     }
@@ -29,10 +31,10 @@ class Animation2 extends Anim implements Animation {
     translate(width / 2, height / 2);
     rotate(alpha+=alphaInc);
     translate(-width / 2, -height / 2);
-    fill(255, opacity);
+    fill(255, 0, 0, opacity);
     noStroke();
-    rectMode(CENTER);
-    rect(width / 2, height / 2, 100+opacity, 100+opacity);
+    ellipseMode(CENTER);
+    ellipse(width / 2, height / 2, 30, opacity);
     popMatrix();
   }
 
@@ -42,11 +44,10 @@ class Animation2 extends Anim implements Animation {
     rotate(alpha+=alphaInc);
     translate(-width / 2, -height / 2);
     noStroke();
+    ellipseMode(CENTER);
     opacity = constrain(opacity, 0, 255);
-    fill(255, 255);
-    opacity -= getVelocity();
-    rectMode(CENTER);
-    rect(width / 2, height / 2, 100+opacity, 100+opacity);
+    fill(255, 0, 0, opacity -= getVelocity());
+    ellipse(width / 2, height / 2, 30, opacity);
     if (opacity <= 0) {
       this.setStatus(Animation.DEAD);
     }

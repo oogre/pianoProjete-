@@ -6,17 +6,31 @@ interface Animation {
   public void setStatus(byte s);
   public int getVelocity();
   public int setVelocity(int v);
-
+  
   public static final byte DEAD		= 0 ;
   public static final byte ATTACK	= 1 ;
   public static final byte SUSTAIN	= 2 ;
   public static final byte DECAY	= 3 ;
+
 }
 
-
-class Anim implements Animation {
+static class Anim implements Animation {
   private byte status = Animation.DEAD;
   private int velocity = 0;
+  
+  public static int GEN_INIT_COUNTER = 0;
+  public static int [] LOCAL_INIT_COUNTER = new int [512];
+
+  Anim(){
+    Anim.GEN_INIT_COUNTER++;
+  }
+  Anim(int id){
+    if(id < 0 || id >Anim.LOCAL_INIT_COUNTER.length){
+      
+    }
+    Anim.LOCAL_INIT_COUNTER[id] ++;
+    Anim.GEN_INIT_COUNTER++;
+  }
 
   void attack() {
   }

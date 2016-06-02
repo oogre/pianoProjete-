@@ -17,11 +17,11 @@ class Animation0 extends Anim implements Animation
          /    SUSTAIN    \
         ATTACK       DECAY
     */
+    super(0);
   }
 
   void attack()
   {
-    println(this.getVelocity());
     /*
       LE DEBUT DE L'ANIM
     */
@@ -37,7 +37,6 @@ class Animation0 extends Anim implements Animation
   }
 
   void decay() {
-    println(this.getVelocity());
     /*
       LA MORT DE L'ANIM
     */
