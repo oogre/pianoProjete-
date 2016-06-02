@@ -16,7 +16,7 @@ class Animation1 extends Anim implements Animation {
     rotate(alpha+=alphaInc);
     translate(-width / 2, -height / 2);
     opacity = constrain(opacity, 0, 255);
-    fill(255, 0, 0, opacity += getVelocity());
+    fill(0, 0, 1, opacity += getVelocity());
     noStroke();
     ellipseMode(CENTER);
     ellipse(width / 2, height / 2, 30, opacity);
@@ -31,7 +31,7 @@ class Animation1 extends Anim implements Animation {
     translate(width / 2, height / 2);
     rotate(alpha+=alphaInc);
     translate(-width / 2, -height / 2);
-    fill(255, 0, 0, opacity);
+    fill(0, 0, 1, opacity);
     noStroke();
     ellipseMode(CENTER);
     ellipse(width / 2, height / 2, 30, opacity);
@@ -46,7 +46,7 @@ class Animation1 extends Anim implements Animation {
     noStroke();
     ellipseMode(CENTER);
     opacity = constrain(opacity, 0, 255);
-    fill(255, 0, 0, opacity -= getVelocity());
+    fill(0,0,1, opacity -= getVelocity());
     ellipse(width / 2, height / 2, 30, opacity);
     if (opacity <= 0) {
       this.setStatus(Animation.DEAD);

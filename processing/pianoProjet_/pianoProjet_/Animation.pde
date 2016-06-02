@@ -68,7 +68,7 @@ static class Anim implements Animation {
 }
 
 void animationSwitcher(Class c, boolean start, int velocity) {
-  if (null == c) throw new NullPointerException("ANIM NOT SET"); 
+  if (null == c) throw new NullPointerException("ANIM NOT SET");
   if (start)
   {
     try
@@ -79,11 +79,11 @@ void animationSwitcher(Class c, boolean start, int velocity) {
       object.setVelocity(velocity);
       animations.add(object);
     }
-    catch (NoSuchMethodException e) 
+    catch (NoSuchMethodException e)
     {
       println(e);
     }
-    catch (Exception e) 
+    catch (Exception e)
     {
       println(e);
     }
