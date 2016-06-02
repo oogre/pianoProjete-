@@ -13,9 +13,10 @@ class Animation2 extends Anim implements Animation {
     rotate(alpha+=alphaInc);
     translate(-width / 2, -height / 2);
     opacity = constrain(opacity, 0, 255);
-    fill(255, 255);
-    opacity += getVelocity();
-    noStroke();
+    stroke(0,0,1, 255);
+    strokeWeight(alphaInc*10);
+    noFill();
+    opacity += getVelocity()/5.0;
     rectMode(CENTER);
     rect(width / 2, height / 2, 100+opacity, 100+opacity);
     if (opacity >= 255) {
@@ -29,8 +30,9 @@ class Animation2 extends Anim implements Animation {
     translate(width / 2, height / 2);
     rotate(alpha+=alphaInc);
     translate(-width / 2, -height / 2);
-    fill(255, opacity);
-    noStroke();
+    stroke(0,0,1, opacity);
+    strokeWeight(alphaInc*10);
+    noFill();
     rectMode(CENTER);
     rect(width / 2, height / 2, 100+opacity, 100+opacity);
     popMatrix();
@@ -41,10 +43,11 @@ class Animation2 extends Anim implements Animation {
     translate(width / 2, height / 2);
     rotate(alpha+=alphaInc);
     translate(-width / 2, -height / 2);
-    noStroke();
     opacity = constrain(opacity, 0, 255);
-    fill(255, 255);
-    opacity -= getVelocity();
+    stroke(0,0,1, 255);
+    strokeWeight(alphaInc*10);
+    noFill();
+    opacity -= getVelocity()/5.0;
     rectMode(CENTER);
     rect(width / 2, height / 2, 100+opacity, 100+opacity);
     if (opacity <= 0) {
